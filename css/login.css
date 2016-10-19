@@ -1,0 +1,124 @@
+body { overflow: hidden; font-family: '\5fae\8f6f\96c5\9ed1', Tahoma, Arial, sans-serif; }
+.login-bg {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../images/login_bg.jpg) center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -webkit-animation: 40s coming linear;
+    animation: 40s coming linear;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+}
+.login-title {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    z-index: 5;
+}
+.login-title .title { font-weight: normal; font-size: 28px; color: #fff; }
+.login-cont {
+    position: absolute;
+
+    margin-left: -155px;
+    left: 50%;
+    top: 20%;
+}
+.login-userImg {
+    overflow: hidden;
+    width: 130px;
+    height: 127px;
+    padding-top: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 65px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .18);
+}
+.login-userImg img {
+    width: 124px;
+    height: 124px;
+    border-radius: 62px;
+}
+.login-form { margin-top: 40px; }
+.login-form .form-item { margin-bottom: 25px; }
+.login-form .input-wrap {
+    position: relative;
+    width: 310px;
+    height: 48px;
+    background-color: #d5c1a8;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 6px;
+}
+.login-form .input-wrap .placeholder {
+    position: absolute;
+    line-height: 46px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, .6);
+    top: 0;
+    left: 40px;
+    cursor: text;
+}
+.login-form .input-wrap .login-input {
+    width: 260px;
+    height: 44px;
+    margin-left: 40px;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    line-height: 44px\9;
+    color: #f4eee8;
+    color: rgba(255, 255, 255, .8);
+    font-family: '\5fae\8f6f\96c5\9ed1', Tahoma, Arial, sans-serif;
+}
+.login-form .login-submit {
+    width: 310px;
+    height: 50px;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    background-color: #ed6956;
+    font-family: '\5fae\8f6f\96c5\9ed1', Tahoma, Arial, sans-serif;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(13, 46, 86, .1);
+}
+.login-tip {
+    display: none;
+    position: absolute;
+    padding: 0 10px;
+    width: 160px;
+    line-height: 44px;
+    border-radius: 6px;
+    background-color: #d5c1a8;
+    background-color: rgba(255, 255, 255, .2);
+    color: #f4eee8;
+    color: rgba(255, 255, 255, .8);
+    top: 0;
+    right: -200px;
+}
+.login-tip:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 8px dashed transparent;
+    border-right: 8px solid rgba(255, 255, 255, .2);
+    top: 15px;
+    left: -16px;
+}
+/*背景渐近动画*/
+@-webkit-keyframes coming{from {-webkit-transform: scale(1);} to {-webkit-transform: scale(1.2);}}
+@keyframes coming{from {transform: scale(1);} to {transform: scale(1.2);}}
+.login-form .form-item .fa-user { position: absolute; top: 12px; left: 10px; font-size: 22px; color: rgba(255, 255, 255, .6); }
+.login-form .form-item .fa-lock { position: absolute; top: 14px; left: 14px; font-size: 22px; color: rgba(255, 255, 255, .6); }
